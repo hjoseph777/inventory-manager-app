@@ -1,7 +1,7 @@
 module com.inventorytracker {
     requires javafx.controls;
-    requires javafx.fxml;
+    requires javafx.graphics;
+    requires java.desktop;
 
-    opens com.inventorytracker to javafx.fxml;
     exports com.inventorytracker;
 }

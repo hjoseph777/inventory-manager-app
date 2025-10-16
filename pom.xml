@@ -43,10 +43,18 @@
                         <!-- Usage: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.inventorytracker.App</mainClass>
+                            <mainClass>com.inventorytracker.InventoryManager</mainClass>
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.inventorytracker.InventoryManagerTest</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
