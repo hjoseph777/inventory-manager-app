@@ -9,7 +9,7 @@
 - UI Framework: JavaFX 21
 
 ## Overview
-Lab6 Inventory Manager GUI demonstrates a modern JavaFX desktop application for inventory management. The project showcases event-driven programming with explicit EventHandler classes, programmatic UI creation without FXML, and automated testing with screenshot capture.
+Lab6 Inventory Manager GUI demonstrates a modern JavaFX desktop application for inventory management. The project showcases event-driven programming with explicit EventHandler classes and programmatic UI creation without FXML.
 
 ## Quick Download
 
@@ -17,12 +17,11 @@ Lab6 Inventory Manager GUI demonstrates a modern JavaFX desktop application for 
 
 [![Download Lab6 Inventory Manager](https://img.shields.io/badge/Download-inventory--manager--app.zip-blue?style=for-the-badge&logo=github)](https://github.com/hjoseph777/inventory-manager-app/releases/download/v1/inventory-manager-app.zip)
 
-*Complete JavaFX project with automated testing ready to run*
+*Complete JavaFX project ready to run*
 
 ## Important: Where your key code lives
 - The main application is in [`src/main/java/com/inventorytracker/InventoryManager.java`](src/main/java/com/inventorytracker/InventoryManager.java) with event handlers and UI creation
-- The automated test suite is in [`src/main/java/com/inventorytracker/InventoryManagerTest.java`](src/main/java/com/inventorytracker/InventoryManagerTest.java) with screenshot capture
-- The Maven configuration is in [`pom.xml`](pom.xml) with JavaFX and testing dependencies
+- The Maven configuration is in [`pom.xml`](pom.xml) with JavaFX dependencies
 
 ## Project Explorer
 An interactive, collapsible view of the codebase. Click file names to open them.
@@ -34,10 +33,9 @@ An interactive, collapsible view of the codebase. Click file names to open them.
       - 📄 [`module-info.java`](src/main/java/module-info.java) – Java module configuration
       - 📁 <strong>com/inventorytracker</strong>
          - 🏠 [`InventoryManager.java`](src/main/java/com/inventorytracker/InventoryManager.java) – **Main application with event handlers**
-         - 🧪 [`InventoryManagerTest.java`](src/main/java/com/inventorytracker/InventoryManagerTest.java) – **Automated test suite with screenshots**
 </details>
 
-<details>
+<details open>
    <summary><strong>src/main/resources/ – UI Resources</strong></summary>
 
    - 📁 <strong>src/main/resources</strong>
@@ -46,57 +44,30 @@ An interactive, collapsible view of the codebase. Click file names to open them.
          - 🎨 [`secondary.fxml`](src/main/resources/com/inventorytracker/secondary.fxml) – Secondary UI layout (reference)
 </details>
 
-<details>
+<details open>
    <summary><strong>Root Configuration</strong></summary>
 
    - ⚙️ [`pom.xml`](pom.xml) – **Maven configuration with JavaFX dependencies**
    - 📝 [`README.md`](README.md) – Documentation (this file)
-   - 📝 [`Instruction_lab6.md`](Instruction_lab6.md) – Lab instructions
-   - 📝 [`demo.md`](demo.md) – 2-minute demo script
-   - 📝 [`TESTING_README.md`](TESTING_README.md) – Testing documentation
 </details>
 
-<details>
-   <summary><strong>Testing & Automation</strong></summary>
-
-   - 🖼️ `test_screenshots/` – **Automated test screenshots**
-   - 🛠️ [`run_tests.bat`](run_tests.bat) – Windows test runner
-   - 🛠️ [`test_automation.ps1`](test_automation.ps1) – PowerShell automation
-   - 🛠️ [`test_automation.sh`](test_automation.sh) – Linux/Mac test runner
-</details>
+<details open>
 ## File structure
 
 ```text
 inventory-manager-app/
-├── 📁 src/main/java/                    # Core application code
-│   ├── 📄 module-info.java              # Java module configuration
-│   └── 📁 com/inventorytracker/         # Main package
-│       ├── 🏠 InventoryManager.java     # Main application class
-│       └── 🧪 InventoryManagerTest.java # Automated test suite
-│
-├── 📁 src/main/resources/               # UI resources
+├── 📁 src/main/java/
+│   ├── 📄 module-info.java
 │   └── 📁 com/inventorytracker/
-│       ├── 🎨 primary.fxml              # Primary UI layout (reference)
-│       └── 🎨 secondary.fxml            # Secondary UI layout (reference)
+│       └── 🏠 InventoryManager.java
 │
-├── 📁 test_screenshots/                 # Automated test screenshots
-│   ├── 🖼️ 01_Initial_state.png         # Empty form
-│   ├── 🖼️ 02_form_filled.png           # All fields filled
-│   ├── 🖼️ 03_save_button_hover.png     # Save button hover
-│   ├── 🖼️ 03_Bsave_button_hover.png    # Save button hover (alternative)
-│   ├── 🖼️ 04_Amouse_event_handler.png  # Mouse event handler A
-│   ├── 🖼️ 04_Bmouse_event_handler.png  # Mouse event handler B
-│   ├── 🖼️ 05_Asave_button_Message.png  # Save button message
-│   └── 🖼️ 06_price_entered_message.png # Price entered message
+├── 📁 src/main/resources/
+│   └── 📁 com/inventorytracker/
+│       ├── 🎨 primary.fxml
+│       └── 🎨 secondary.fxml
 │
-├── ⚙️ pom.xml                           # Maven configuration
-├── 📝 README.md                         # Documentation (this file)
-├── 📝 Instruction_lab6.md               # Lab instructions
-├── 📝 demo.md                           # 2-minute demo script
-├── 📝 TESTING_README.md                 # Testing documentation
-├── 🛠️ run_tests.bat                     # Windows test runner
-├── 🛠️ test_automation.ps1               # PowerShell automation
-└── 🛠️ test_automation.sh                # Linux/Mac test runner
+├── ⚙️ pom.xml
+└── 📝 README.md
 ```
 
 ## Quick Code Reference
@@ -104,15 +75,9 @@ inventory-manager-app/
 |------|------|------|---------|
 | 📄 | Config | [`module-info.java`](src/main/java/module-info.java) | Java module with JavaFX dependencies |
 | 🏠 | Main | [`InventoryManager.java`](src/main/java/com/inventorytracker/InventoryManager.java) | **Main application with event handlers** |
-| 🧪 | Test | [`InventoryManagerTest.java`](src/main/java/com/inventorytracker/InventoryManagerTest.java) | **Automated testing with screenshots** |
 | ⚙️ | Config | [`pom.xml`](pom.xml) | **Maven configuration with JavaFX** |
 | 🎨 | UI | [`primary.fxml`](src/main/resources/com/inventorytracker/primary.fxml) | Primary UI layout (reference) |
 | 🎨 | UI | [`secondary.fxml`](src/main/resources/com/inventorytracker/secondary.fxml) | Secondary UI layout (reference) |
-| 📝 | Docs | [`demo.md`](demo.md) | 2-minute demo script |
-| 📝 | Docs | [`TESTING_README.md`](TESTING_README.md) | Testing documentation |
-| 🛠️ | Script | [`run_tests.bat`](run_tests.bat) | Windows test automation |
-| 🛠️ | Script | [`test_automation.ps1`](test_automation.ps1) | PowerShell automation |
-| 🛠️ | Script | [`test_automation.sh`](test_automation.sh) | Linux/Mac test automation |
 
 ## Demo Screenshots
 
@@ -161,7 +126,6 @@ Live screenshots from the automated testing:
 
 - Modern JavaFX user interface with programmatic layout
 - Event-driven programming with explicit EventHandler classes
-- Automated testing with screenshot capture
 - Cross-platform compatibility (Windows, macOS, Linux)
 - Java 21 LTS support
 
@@ -197,21 +161,11 @@ mvn clean compile
 mvn javafx:run
 ```
 
-### 5. Run Automated Tests
-```bash
-# Run automated tests with screenshots
-mvn exec:java -Dexec.mainClass="com.inventorytracker.InventoryManagerTest"
-
-# Or use the batch script
-./run_tests.bat
-```
-
 ## 🔧 Technologies Used
 
 - **Java 21 LTS** - Programming language
 - **JavaFX 21.0.5** - UI framework
 - **Maven 3.11.0** - Build tool and dependency management
-- **AWT Robot** - Screenshot capture for testing
 
 ## 💻 Development
 
