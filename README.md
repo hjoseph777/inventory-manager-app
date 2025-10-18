@@ -108,19 +108,12 @@ Live screenshots from the automated testing:
 
 *Automated test screenshots showing different GUI states*
 
-## Video Demo
+## Video code Demo
 
-### Option 1: GitHub Release Asset Download
-[![Download 2-Minute Demo Video](https://img.shields.io/badge/Download-2--Minute--Demo.mpg-red?style=for-the-badge&logo=video)](https://github.com/hjoseph777/inventory-manager-app/releases/download/v1/2-Minute-Demo.mpg)
+You can view or download the video externally on ScreenPal:
 
-*Download the 2-minute code explanation video*
-
-### Option 2: Embedded Video Player
-*Video will be embedded here once uploaded to GitHub Releases*
-
-**Video URL**: https://github.com/hjoseph777/inventory-manager-app/releases/download/v1/2-Minute-Demo.mpg
-
-*Copy and paste this URL into your browser to view the video*
+- Watch the video on ScreenPal: https://go.screenpal.com/watch/cT6Fhynb48Y
+- Or open in your browser: [Watch the video on ScreenPal](https://go.screenpal.com/watch/cT6Fhynb48Y)
 
 ## 🚀 Features
 
